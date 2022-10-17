@@ -16,7 +16,6 @@
 .header-right {
     width: 300px;
     display: flex;
-    background-color: purple;
     align-items: center;
     margin-right: 40px;
     justify-content: space-between;

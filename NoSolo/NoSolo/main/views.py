@@ -7,3 +7,7 @@ def index_view(request):
     }
 
     return render(request, 'index.html', context)
+
+
+def login_view(request):
+    return render(request, 'accounts/login.html', {})

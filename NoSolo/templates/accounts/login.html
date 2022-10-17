@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% block page_content %}
+    <title>Login - No Solo</title>
+    <div class="login-container">
+        <div class="welcome-text">Welcome to No-Solo</div>
+        <div class="login-signup-nav">
+            <div class="login-container-login-btn">Log In</div>
+            <div class="login-container-signup-btn">Sign Up</div>
+        </div>
+        <form action="{% url 'login' %}" method="post">
+            <div>
+                {% csrf_token %}
+                {{ form.as_p }}
+                <input type="submit" value="Log In">
+            </div>
+        </form>
+    </div>
+    </body>
+{% endblock %}

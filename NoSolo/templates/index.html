@@ -1,32 +1,8 @@
-{% load static %}
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>No Solo</title>
-    <link rel="stylesheet" href="{% static 'css/main.css' %}">
-    <link rel="stylesheet" href="{% static 'css/general.css' %}">
-    <link rel="stylesheet" href="{% static 'css/header.css' %}">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Poppins" />
-</head>
-<body>
-<div class="header">
-    <div class="header-left">
-        left
-    </div>
-    <div class="header-middle">
-        middle
-    </div>
-    <div class="header-right">
-        <button class="login-button">Log In</button>
-        <button class="signup-button">Sign Up</button>
-        <button class="profile-button">Profile</button>
-    </div>
-</div>
-<div class="test-item">
+{% extends 'base.html' %}
+{% block page_content %}
+    <div class="test-item">
     item
-</div>
+    </div>
+{% endblock %}
 </body>
 </html>
