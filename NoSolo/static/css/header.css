@@ -1,0 +1,53 @@
+.header {
+    background-color: #20202b;
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+}
+
+.header-left {
+    background-color: red;
+}
+
+.header-middle {
+    background-color: green;
+}
+
+.header-right {
+    width: 300px;
+    display: flex;
+    background-color: purple;
+    align-items: center;
+    margin-right: 40px;
+    justify-content: space-between;
+}
+
+.login-button,
+.signup-button,
+.profile-button {
+    font-family: Poppins, Arial;
+    background-color: #333345;
+    font-size: 15px;
+    font-weight: 600;
+    color: white;
+    height: 40px;
+    padding: 0 20px;
+    border: 0 none;
+    border-radius: 20px;
+    white-space: nowrap;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.login-button:hover,
+.profile-button:hover{
+    background-color: #5A5A75;
+}
+
+.signup-button {
+    background-color: #7b47ff;
+}
+
+.signup-button:hover {
+    background-color: #AE8EFF;
+}
